@@ -1,5 +1,6 @@
 
 import React, { useState } from 'react';
+import { SketchPicker } from 'react-color'
 
 const EditContainerModal = ({ content, closeContainerModal, saveEditContainerModal }) => {
     const [editContent, setEditContent] = useState(
@@ -8,7 +9,6 @@ const EditContainerModal = ({ content, closeContainerModal, saveEditContainerMod
             subtitle: content.subtitle,
             color: content.color
         });
-
     return (
         <div className="modal modal-visible" id="modal" tabIndex="-1">
             <div className="modal-backdrop" id="modal-backdrop" style={{ height: "722px" }}></div>
@@ -40,8 +40,13 @@ const EditContainerModal = ({ content, closeContainerModal, saveEditContainerMod
                                 type="text"
                                 value={editContent.color}
                                 onChange={(e) => {
-                                    setEditContent({ ...editContent, description: e.target.value })
+                                    setEditContent({ ...editContent, color: e.target.value })
                                 }}></input>
+                            <SketchPicker 
+                                color={editContent.color}
+                                onChange={(color, event) => {
+                                    setEditContent({ ...editContent, color: color.hex })
+                            }}/>
                         </div>
 
                     </div>

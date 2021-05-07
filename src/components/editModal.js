@@ -142,6 +142,7 @@ const EditModal = ({ content, closeModal, saveEditModal, containers }) => {
                         <div>
                             <label>Description: </label>
                             <textarea
+                                className="bullet-text"
                                 type="text"
                                 value={editContent.description}
                                 onChange={(e) => {

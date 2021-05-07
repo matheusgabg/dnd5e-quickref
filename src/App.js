@@ -13,21 +13,11 @@ import React, { useState } from 'react';
 import ContainerList from './components/containerList.js';
 
 
-
 function App() {
-  let _allItems = { ...localStorage };
+  const dnd5eJson = JSON.stringify({ items: actionListDnD, containers: actionContainerListDnd });
+  const t20Json= JSON.stringify({ items: actionListT20, containers: actionContainerListT20 })
+  let _allItems = { ...localStorage, "dnd5e": dnd5eJson, "t20": t20Json };
   let _initialData = {}
-
-
-  if (Reflect.ownKeys(_allItems).length === 0) {
-    _initialData.items = actionListDnD;
-    _initialData.container = actionContainerListDnd;
-    localStorage.setItem('dnd5e', JSON.stringify({ items: actionListDnD, containers: actionContainerListDnd }));
-    localStorage.setItem('t20', JSON.stringify({ items: actionListT20, containers: actionContainerListT20 }));
-  }
-  else {
-    _initialData = JSON.parse(Reflect.get(_allItems, "dnd5e"));
-  }
 
   const _currentLocation = new URL(window.location);
   let _isStaticMode = false;
@@ -44,14 +34,15 @@ function App() {
     catch {
       console.log("Url params do not match any existing presets")
     }
-
+  }
+  else {
+    _initialData.items = actionListDnD;
+    _initialData.containers = actionContainerListDnd;
   }
 
 
   //Editing mode
   const [isEditMode, setEditMode] = useState(false);
-  const [isStaticMode, setStaticMode] = useState(false);
-
 
   //Item list controls
   const [listItems, setListItems] = useState({ items: _initialData.items });
@@ -76,8 +67,7 @@ function App() {
   /* LOCAL STORAGE CONTROL */
   /* ------------------------------------------------------------------------- */
   const getLocalStorage = (dataSet) => {
-    let allItems = { ...localStorage };
-    const data = JSON.parse(Reflect.get(allItems, dataSet));
+    const data = JSON.parse(Reflect.get(_allItems, dataSet));
     setListItems({ items: data.items });
     setListContainers({ items: data.containers })
   }
@@ -386,8 +376,6 @@ function App() {
     return true;
   }
 
-
-
   const listPresets = Reflect.ownKeys(_allItems);
 
   return (
@@ -409,24 +397,12 @@ function App() {
             </>
             :
             <>
-              <button
-                className="app-button"
-                style={{ marginLeft: "8px" }}
-                onClick={enableEditMode}>Edit Items!</button>
-
-              {activeDataSet === "dnd5e" || activeDataSet === "t20" ?
+              {activeDataSet !== "dnd5e" && activeDataSet !== "t20" ?
                 <button
                   className="app-button"
                   style={{ marginLeft: "8px" }}
-                  onClick={() => {
-                    localStorage.removeItem(activeDataSet);
-                    window.location.reload();
-                    if(activeDataSet === 'dnd5e')
-                      localStorage.setItem('dnd5e', JSON.stringify({ items: actionListDnD, containers: actionContainerListDnd }));
-                    if(activeDataSet === "t20")
-                      localStorage.setItem('t20', JSON.stringify({ items: actionListT20, containers: actionContainerListT20 }));
-                  }}>Reset to Original</button>
-                : null
+                  onClick={enableEditMode}>Edit Items!</button>
+                  : null
               }
 
 

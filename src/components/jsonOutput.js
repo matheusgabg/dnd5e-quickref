@@ -58,7 +58,7 @@ const JsonOutput = ({ items, containers, handleSaveJson }) => {
                 //reset state values
                 setItemsJson("");
                 setContainerJson("");
-            }}>Save Json</button>
+            }}>View Changes</button>
         </div>
     )
 }

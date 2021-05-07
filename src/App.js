@@ -480,7 +480,9 @@ function App() {
         </>
         : null
       }
-
+      <div className="footer">
+        <a href="https://github.com/matheusgabg/dnd5e-quickref"><i className="fab fa-github"></i> Check my code here!</a>
+      </div>
     </div>
   );
 }

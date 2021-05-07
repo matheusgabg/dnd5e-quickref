@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/dnd5e-quickref/static/css/main.8acb7219.chunk.css",
-    "main.js": "/dnd5e-quickref/static/js/main.39c57a32.chunk.js",
-    "main.js.map": "/dnd5e-quickref/static/js/main.39c57a32.chunk.js.map",
+    "main.js": "/dnd5e-quickref/static/js/main.f6143917.chunk.js",
+    "main.js.map": "/dnd5e-quickref/static/js/main.f6143917.chunk.js.map",
     "runtime-main.js": "/dnd5e-quickref/static/js/runtime-main.3d324b53.js",
     "runtime-main.js.map": "/dnd5e-quickref/static/js/runtime-main.3d324b53.js.map",
-    "static/js/2.8d378322.chunk.js": "/dnd5e-quickref/static/js/2.8d378322.chunk.js",
-    "static/js/2.8d378322.chunk.js.map": "/dnd5e-quickref/static/js/2.8d378322.chunk.js.map",
+    "static/js/2.3f229751.chunk.js": "/dnd5e-quickref/static/js/2.3f229751.chunk.js",
+    "static/js/2.3f229751.chunk.js.map": "/dnd5e-quickref/static/js/2.3f229751.chunk.js.map",
     "index.html": "/dnd5e-quickref/index.html",
     "static/css/main.8acb7219.chunk.css.map": "/dnd5e-quickref/static/css/main.8acb7219.chunk.css.map",
-    "static/js/2.8d378322.chunk.js.LICENSE.txt": "/dnd5e-quickref/static/js/2.8d378322.chunk.js.LICENSE.txt",
+    "static/js/2.3f229751.chunk.js.LICENSE.txt": "/dnd5e-quickref/static/js/2.3f229751.chunk.js.LICENSE.txt",
     "static/media/icons.css": "/dnd5e-quickref/static/media/zigzag-leaf.4f2bc261.png"
   },
   "entrypoints": [
     "static/js/runtime-main.3d324b53.js",
-    "static/js/2.8d378322.chunk.js",
+    "static/js/2.3f229751.chunk.js",
     "static/css/main.8acb7219.chunk.css",
-    "static/js/main.39c57a32.chunk.js"
+    "static/js/main.f6143917.chunk.js"
   ]
 }

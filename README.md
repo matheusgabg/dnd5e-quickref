@@ -1,3 +1,6 @@
+# Disclaimer
+I do not own any of the material presented as part of this application. All text and descriptions in this app are owned by [Wizards of The Coast](https://company.wizards.com/en) and [Jambô Editora](https://jamboeditora.com.br/).
+
 dnd5e-quickref
 ==============
 

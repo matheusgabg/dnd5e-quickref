@@ -15,7 +15,7 @@ import ContainerList from './components/containerList.js';
 
 function App() {
   const dnd5eJson = JSON.stringify({ items: actionListDnD, containers: actionContainerListDnd });
-  const t20Json= JSON.stringify({ items: actionListT20, containers: actionContainerListT20 })
+  const t20Json = JSON.stringify({ items: actionListT20, containers: actionContainerListT20 })
   let _allItems = { ...localStorage, "dnd5e": dnd5eJson, "t20": t20Json };
   let _initialData = {}
 
@@ -398,11 +398,20 @@ function App() {
             :
             <>
               {activeDataSet !== "dnd5e" && activeDataSet !== "t20" ?
-                <button
-                  className="app-button"
-                  style={{ marginLeft: "8px" }}
-                  onClick={enableEditMode}>Edit Items!</button>
-                  : null
+                <>
+                  <button
+                    className="app-button"
+                    style={{ marginLeft: "8px" }}
+                    onClick={enableEditMode}>Edit Items!</button>
+                  <button
+                    className="app-button"
+                    style={{ marginLeft: "8px", backgroundColor: "Maroon" }}
+                    onClick={() => {
+                      localStorage.removeItem(activeDataSet);
+                      window.location.reload();
+                    }}>Delete Preset</button>
+                </>
+                : null
               }
 
 

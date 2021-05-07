@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/dnd5e-quickref/static/css/main.bbf3de0c.chunk.css",
-    "main.js": "/dnd5e-quickref/static/js/main.f82f0cb7.chunk.js",
-    "main.js.map": "/dnd5e-quickref/static/js/main.f82f0cb7.chunk.js.map",
+    "main.js": "/dnd5e-quickref/static/js/main.95e8e879.chunk.js",
+    "main.js.map": "/dnd5e-quickref/static/js/main.95e8e879.chunk.js.map",
     "runtime-main.js": "/dnd5e-quickref/static/js/runtime-main.3d324b53.js",
     "runtime-main.js.map": "/dnd5e-quickref/static/js/runtime-main.3d324b53.js.map",
     "static/js/2.3f229751.chunk.js": "/dnd5e-quickref/static/js/2.3f229751.chunk.js",
@@ -16,6 +16,6 @@
     "static/js/runtime-main.3d324b53.js",
     "static/js/2.3f229751.chunk.js",
     "static/css/main.bbf3de0c.chunk.css",
-    "static/js/main.f82f0cb7.chunk.js"
+    "static/js/main.95e8e879.chunk.js"
   ]
 }

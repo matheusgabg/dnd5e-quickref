@@ -197,7 +197,7 @@ export const actionListT20 =
 			containerId: 1,
             icon: "icon-at-sea",
             subtitle: "Movimento especial",
-            description: "Voando ou nadando, movimentar-se na vertical custa o dovro na subida (ou o triplo em diagonais), e metade na descida (ou o normal em diagonais)",
+            description: "Voando ou nadando, movimentar-se na vertical custa o dobro na subida (ou o triplo em diagonais), e metade na descida (ou o normal em diagonais)",
             reference: "pg. 224.",
             bullets: [
 

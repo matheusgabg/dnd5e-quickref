@@ -9,7 +9,7 @@ const EditPresetModal = ({ addNewPreset, closePresetModal }) => {
     },[]);
     return (
         <div className="modal modal-visible" id="modal" tabIndex="-1">
-            <div className="modal-backdrop" id="modal-backdrop" style={{ height: "722px" }}></div>
+            <div className="modal-backdrop" id="modal-backdrop"></div>
             <div className="modal-dialog modalsize">
                 <div className="section-container modal-container" id="modal-container" style={{ backgroundColor: "black", borderColor: "black" }}>
                     <div className="section-title" id="modal-title">SAVING NEW REFERENCE</div>

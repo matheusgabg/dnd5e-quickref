@@ -11,7 +11,7 @@ const EditContainerModal = ({ content, closeContainerModal, saveEditContainerMod
         });
     return (
         <div className="modal modal-visible" id="modal" tabIndex="-1">
-            <div className="modal-backdrop" id="modal-backdrop" style={{ height: "722px" }}></div>
+            <div className="modal-backdrop" id="modal-backdrop" ></div>
             <div className="modal-dialog modalsize">
                 <div className="section-container modal-container" id="modal-container" style={{ backgroundColor: content.color, borderColor: content.color }}>
                     <div className="section-title" id="modal-title">EDIT<span className="float-right">{content.title}</span></div>

@@ -1,6 +1,3 @@
-# Disclaimer
-I do not own any of the material presented as part of this application. All text and descriptions in this app are owned by [Wizards of The Coast](https://company.wizards.com/en) and [Jambô Editora](https://jamboeditora.com.br/).
-
 dnd5e-quickref
 ==============
 
@@ -35,7 +32,8 @@ There is a section at the bottom of the page that will allow you to view and edi
 You can view a static version the website by adding URL arguments (without editing buttons/functionalities). You can use this with your own created presets with *{url}?preset={myPresetHere}*.
 Example: https://matheusgabg.github.io/dnd5e-quickref/?preset=dnd5e
 
-
+# Disclaimer
+I do not own any of the data and information presented as part of this application. All text and descriptions in this app are owned by [Wizards of The Coast](https://company.wizards.com/en) and [Jambô Editora](https://jamboeditora.com.br/).
 
 Icons
 ==============
